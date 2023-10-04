@@ -8,9 +8,8 @@ function setCookie(name, value, days) {
   const cookieValue = `${name}=${value}; expires=${expirationDate.toUTCString()}; path=/`;
   document.cookie = cookieValue;
 }
-var a=10
 function App( ){
-  console.log(process.env.CONSOLE1)
+  console.log(process.env.REACT_APP_CONSOLE1)
    const handleContextMenu = (e) => {
     e.preventDefault();
   };
