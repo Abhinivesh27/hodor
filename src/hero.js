@@ -7,7 +7,7 @@ const Index = () => {
             <div className="w-full relative pb-10 px-6 xl:px-0">
                 <img className="absolute w-full inset-0 h-full object-cover object-center" src="https://cdn.tuk.dev/assets/templates/weCare/hero2-bg.png" alt="we care family"/>
                 <nav className="lg:hidden relative z-40">
-                    <div className="flex py-6 justify-between items-center px-4">
+                    <div className="flex py-6 justify-between items-center px-4">  
                         <div>
                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/right_aligned_with_searchbar_Svg3.svg" alt="logo" />
                         </div> 
