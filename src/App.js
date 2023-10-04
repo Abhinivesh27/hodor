@@ -10,7 +10,7 @@ function setCookie(name, value, days) {
 }
 var a=10
 function App( ){
-  console.log("ATCTF{b4c1c_F14G}")
+  console.log(process.env.CONSOLE1)
    const handleContextMenu = (e) => {
     e.preventDefault();
   };
