@@ -13,7 +13,7 @@ function App( ){
    const handleContextMenu = (e) => {
     e.preventDefault();
   };
-  setCookie("flag"," ATCTF{N1C3_C00k13}",23)
+  setCookie("flag",process.env.REACT_APP_COOKIE,23)
   fetch("https://api.npoint.io/a36172839e55efa040bc")
   
  return(
