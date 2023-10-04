@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import About1 from "./about"
+import Footer from "./footer"
+import Index from "./hero"
+function setCookie(name, value, days) {
+  const expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + days);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const cookieValue = `${name}=${value}; expires=${expirationDate.toUTCString()}; path=/`;
+  document.cookie = cookieValue;
 }
 
-export default App;
+function App( ){
+  console.log("ATCTF{b4c1c_F14G}")
+   const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
+  setCookie("flag"," ATCTF{N1C3_C00k13}",23)
+  fetch("https://api.npoint.io/a36172839e55efa040bc")
+ return(
+    <div onContextMenu={handleContextMenu}>
+    <Index />
+    <About1/>
+    <Footer/>
+    </div>
+  )
+}
+export default App        
