@@ -9,6 +9,19 @@ function setCookie(name, value, days) {
   document.cookie = cookieValue;
 }
 function App( ){
+
+  const isUserAdmin = () => {
+    const cookies = document.cookie.split(';');
+    for (const cookie of cookies) {
+      const [name, value] = cookie.trim().split('=');
+      if (name === 'user_type' && value === 'admin') {
+        return true;
+      }
+      setCookie("user_type","user",23)
+    }
+    return false;
+  };
+
   console.log(process.env.REACT_APP_CONSOLE1)
    const handleContextMenu = (e) => {
     e.preventDefault();
@@ -19,6 +32,7 @@ function App( ){
  return(
     <div onContextMenu={handleContextMenu}>
     <Index />
+    <h1>{isUserAdmin ? "User is Admin":"User is normal user"}</h1>
     <About1/>
     <Footer/>
     </div>
