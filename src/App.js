@@ -1,6 +1,8 @@
 import About1 from "./about"
 import Footer from "./footer"
 import Index from "./hero"
+import Team from "./team"
+
 function setCookie(name, value, days) {
   const expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + days);
@@ -21,6 +23,7 @@ function App( ){
     <div onContextMenu={handleContextMenu}>
     <Index/>
     <About1/>
+    <Team />
     <Footer/>
     </div>
   )
