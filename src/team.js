@@ -14,8 +14,8 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="bg-indigo-700 rounded-md lg:w-96 w-80 flex flex-col items-center justify-center md:py-0 py-12">
-                        <h3 className="text-2xl font-semibold leading-6 text-center text-white">About Team</h3>
-                        <p className="lg:w-80 lg:px-0 px-4 text-base leading-6 text-center text-white mt-6">Teamwork is the collaborative effort of a team to achieve a common goal or to complete task in the most effective way. This concept is seen in the greater framework of a team in which indipendent indiviuals who work together towards common goal basic requirement for effective team and company</p>
+                        <h3 className="text-2xl font-semibold leading-6 text-center text-white">Abhinivesh S</h3>
+                        <p className="lg:w-80 lg:px-0 px-4 text-base leading-6 text-center text-white mt-6">Organiser</p>
                     </div>
                     <div className="lg:w-96 w-80">
                         <img src="https://i.pinimg.com/originals/72/45/fb/7245fb0ca786bb4a98fb8465e437c5bb.jpg" className="h-72 w-full object-contain object-center rounded-t-md" alt="woman in black dress" />
